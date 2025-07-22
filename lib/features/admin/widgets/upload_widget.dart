@@ -10,11 +10,9 @@ class UploadWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
+      onPressed: () => context.read<DocumentCubit>().uploadDocument(),
       icon: const Icon(Icons.upload_file),
-      label: const Text('Subir Documento Mock'),
-      onPressed: () async {
-        context.read<DocumentCubit>().addMockDocument();
-      },
+      label: const Text('Subir documento PDF'),
     );
   }
 }

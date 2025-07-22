@@ -6,13 +6,11 @@ import 'package:go_router/go_router.dart';
 
 import 'core/di/service_locator.dart';
 import 'core/routing/app_router.dart';
-// import 'firebase_options.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
+  await Firebase.initializeApp(options: firebaseOptions);
   setupLocator(); // Inyección de dependencias
   runApp(const MyApp());
 }

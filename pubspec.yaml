@@ -21,6 +21,8 @@ dependencies:
   http: ^0.13.6
   bloc: ^8.1.4
   meta: ^1.16.0
+  syncfusion_flutter_pdf: ^25.2.7
+  url_launcher: ^6.3.2
 
 dev_dependencies:
   flutter_test:

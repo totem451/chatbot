@@ -13,7 +13,10 @@ class ChatPage extends StatelessWidget {
     return BlocProvider(
       create: (_) => ChatCubit(),
       child: Scaffold(
-        appBar: AppBar(title: const Text('Asistente Virtual IA')),
+        appBar: AppBar(
+          title: const Text('Asistente Virtual IA'),
+          backgroundColor: Colors.grey[900],
+        ),
         body: const Column(
           children: [
             Expanded(child: MessageList()),
